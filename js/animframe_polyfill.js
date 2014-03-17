@@ -1,3 +1,5 @@
+//SIKELE 定义一个匿名函数并调用一次，JavaScript权威指南第六版 P181
+//SIKELE window.requestAnimationFrame(callback)方法模拟，来自https://gist.github.com/paulirish/1579671
 (function() {
   var lastTime = 0;
   var vendors = ['webkit', 'moz'];

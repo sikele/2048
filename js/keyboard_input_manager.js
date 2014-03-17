@@ -44,12 +44,12 @@ KeyboardInputManager.prototype.listen = function () {
     var mapped    = map[event.which];
 
     if (!modifiers) {
-      if (mapped !== undefined) {
+      if (mapped !== undefined) { //SIKELE !==非恒等
         event.preventDefault();
         self.emit("move", mapped);
       }
 
-      if (event.which === 32) self.restart.bind(self)(event);
+      if (event.which === 32) self.restart.bind(self)(event); //SIKELE ===恒等
     }
   });
 

@@ -1,6 +1,6 @@
 function GameManager(size, InputManager, Actuator, ScoreManager) {
   this.size         = size; // Size of the grid
-  this.inputManager = new InputManager;
+  this.inputManager = new InputManager; //SIKELE 传入的是类，而是不类的实例
   this.scoreManager = new ScoreManager;
   this.actuator     = new Actuator;
 
